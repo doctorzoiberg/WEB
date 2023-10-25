@@ -1,0 +1,55 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #808080;
+}
+
+h2 {	
+	font-size: 34px;
+	color: #3786bd;
+	text-align: left;
+}
+
+.main {
+  margin-top:150px;
+  margin-left: auto;
+  margin-right: auto;
+/*   background: #f5f5f5; */
+  max-width: 600px;
+}
+.container {
+	float: left;
+/* 	background: #8ac8ff; */
+	margin: 5px 5px 5px 0px;
+}
+.mail {
+	float: left;
+/* 	background: #8a00ff; */
+	margin: 5px 5px 5px 0px;
+}
+
+input[type="text"], input[type="email"], input[type="name"], select {
+	padding: 5px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	margin: 5px 5px 5px 0px;
+	height: 30px;	
+	width: 270px;
+}
+input[type="email"], select {
+	width: 562px;
+}
+
+.btn {
+	float: left; 
+	height: 45px;
+	width: 130px;
+	border: 0px solid #000; 
+    background: #3786bd;
+    color: #fff;
+	border-radius: 5px 0px 5px 0px;	
+}
+
