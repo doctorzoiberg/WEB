@@ -1,1 +1,57 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная 7-8</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+	<body>
+		<div class="top">
+		
+			<div class="cont">
+				<button onclick="prevSlide()"><b><<</b></button>
+			</div>
+			<div class="cont">
+				<button onclick="nextSlide()"><b>>></b></button>
+			</div>
+			
+		</div>	
+		
+		
+		<div class="content">
+			<img id="slider-image" src="" alt="Slider Image">
+		</div>
+
+   <script>
+        const images = [
+            "media/image1.jpg",
+            "media/image2.jpg",
+            "media/image3.jpg",
+			"media/image4.jpg",
+			"media/image1 (1).png"
+        ];
+        let currentSlide = 0;
+        const imageElement = document.getElementById("slider-image");
+        const slideNumberElement = document.getElementById("slide-number");
+
+        function showSlide() {
+            imageElement.src = images[currentSlide];
+            slideNumberElement.innerText = currentSlide + 1;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % images.length;
+            showSlide();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + images.length) % images.length;
+            showSlide();
+        }
+
+        showSlide();
+    </script>
+	</body>
+</html>
