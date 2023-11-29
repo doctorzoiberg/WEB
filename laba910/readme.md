@@ -15,5 +15,5 @@ npm install express
 
 Выполните команду для запуска вашего сервера:
 ```
-node script.js
+node miniserver.js
 ```
